@@ -1,17 +1,24 @@
+:root {
+    --bgColor: #000000dd;
+    --hoverColor: linear-gradient(to right, rgb(245, 217, 5), rgb(255, 127, 80));
+}
 
 html{
     scroll-behavior: smooth;
 }
 body{
-    min-height: 600vh;
+    /* min-height: 600vh; */
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
 }
 
 .pages {
     min-height: 100vh;
 }
+
 
 .page1{
     background-color:darkblue;
@@ -20,10 +27,71 @@ body{
     background-color: bisque;
 }
 .page3{
-    background-color: lightblue;
+    background-color: aliceblue;
 }
+.meetTeam{
+    padding: 3.5rem 0 3.4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.images{
+    
+    height: 300px;
+    display: flex;
+    /* justify-content: space-around; */
+    /* align-items: space-around; */
+    
+    
+}
+.meetTeamTitle{
+    display: inline-block;
+    border-bottom: 2px yellow solid;
+    /* font-weight:900; */
+    font-size: x-large;
+    color: whitesmoke;
+    margin-top: 4rem;
+    margin-left: 45%;
+    /* background-color: bisque; */
+}
+.mainLabel{
+   
+    background-color: rgb(33, 31, 31);
+    height: 2.5rem;
+    margin-top: -100px;
+    margin-left: 2.5%;
+    /* display: flex; */
+    justify-content: center;
+    width: 80%;
+    align-items: center; 
+    display: inline-block; 
+    padding: 15px;
+    /* animation: changeColor 6s ease 6s forwards; */
+    /* transition: background 1.5s ease; */
+    
+    /* position: absolute; */    
+}
+.mainLabel:hover{
+   
+    background: var(--hoverColor);
+
+    
+}
+.label{
+    font-weight:500;
+}
+
+.subtitle{
+    font-size: 13px;
+    color: rgba(245, 245, 245, 0.715);
+    /* font-weight: 600; */
+}
+
+
 .page4{
-    background-color: lightgreen;
+    background-color: var(--bgColor);
+
 }
 .page5{
     background-color: lightpink;
