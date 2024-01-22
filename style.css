@@ -13,24 +13,35 @@ body{
     margin: 0;
     color: whitesmoke;
     font-family: 'Roboto', sans-serif;
+    /* font-weight:100; */
 }
 
 .pages {
     min-height: 100vh;
 }
 
-
+/* ========== Page 1 ================== */
 .page1{
     background-color:darkblue;
 }
+
+/* ========== Page 2================== */
 .page2{
     background-color: bisque;
 }
+
+/* ========== Page 3 ================== */
 .page3{
     background-color: aliceblue;
 }
+
+/* ========== Page 4 ================== */
+.page4{
+    background-color: var(--bgColor);
+}
+
 .meetTeam{
-    padding: 3.5rem 0 3.4rem 0;
+    padding: 3.5rem 50px 3.4rem 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,12 +49,8 @@ body{
 }
 .images{
     
-    height: 300px;
-    display: flex;
-    /* justify-content: space-around; */
-    /* align-items: space-around; */
-    
-    
+    height: 285px;
+    display: flex;   
 }
 .meetTeamTitle{
     display: inline-block;
@@ -89,13 +96,145 @@ body{
 }
 
 
-.page4{
-    background-color: var(--bgColor);
-
-}
+/* ======== Page 5 ============ */
 .page5{
     background-color: lightpink;
 }
 .page6{
     background-color: cornflowerblue;
+}
+
+footer{
+    height: 100vh;
+    /* background-color: blueviolet; */
+    background-color: var(--bgColor);
+    display: flex;
+    flex-direction: column;
+    /* gap: 200px; */
+
+}
+.contact_info h1{
+    font-size: 70px;
+    font-weight: bolder;
+    color: rgb(245, 245, 245);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contact_info span{
+    
+    color: rgba(11, 11, 11, 0.251);
+    -webkit-text-stroke: 0.1px rgba(211, 211, 211, 0.815);
+     /* text-stroke: 0.5px rgba(255, 255, 255, 0.696);     */
+}
+.contact_info h4{
+    font-weight: 200;
+    color: rgb(255, 200, 0);
+    font-family: 'Bad Script', cursive;;
+
+
+}
+.footer_item{
+    display: flex;
+    gap: 20px;
+    
+    padding: 0 50px 0 50px;
+    
+}
+.outer{
+    background-image: url('assets/serhat-beyazkaya-ayWgRkCk2sQ-unsplash.jpg'); /* Replace 'your-image-path.jpg' with the actual path to your image */
+    background-size: cover; /* This property ensures the image covers the entire background */
+    background-position: center center; /* Center the background image */
+    background-repeat: no-repeat; 
+    height: 800px;
+}
+.bottom_sections{
+    min-height: 50vh;
+}
+.columns{
+    /* background-color: red; */
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: start;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+}
+.icon_images img{
+    border: 2px rgb(255, 204, 0) solid;
+    border-radius: 50%;
+    width: 15px;
+    padding: 8px;
+ 
+    /* background-color: whitesmoke; */
+}
+.icon_images{
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+}
+.icons{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 35px;
+}
+.contact_info{
+    /* margin-top: -10px; */
+    padding: 0;
+    min-height: 50vh;
+    background-color: rgba(0, 0, 0, 0.546);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact_item{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    gap: 20px;
+}
+.contact_box{
+    background-color: whitesmoke;
+    color: black;
+    padding: 12px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.contact_box:hover{
+    background: var(--hoverColor);
+}
+.menu li a{
+    color: whitesmoke;
+    text-decoration: none;
+    
+}
+.menu li::marker{
+    color: rgb(255, 200, 0);
+
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.phone_number{
+    color: rgb(255, 200, 0); ;
+}
+.email_address{
+    border-bottom: 1px  rgb(255, 200, 0) solid;
+}
+.column1 p{
+    font-weight: 50;
+    /* letter-spacing: 0.5px; */
+    font-family: 'Darker Grotesque', sans-serif;
+    
 }
