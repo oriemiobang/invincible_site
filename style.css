@@ -1,5 +1,5 @@
 :root {
-    --bgColor: #000000dd;
+    --bgColor: #000000e9;
     --hoverColor: linear-gradient(to right, rgb(245, 217, 5), rgb(255, 127, 80));
 }
 
@@ -9,9 +9,10 @@ html{
 body{
     /* min-height: 600vh; */
     box-sizing: border-box;
+    background-color: var(--bgColor);
     padding: 0;
     margin: 0;
-    color: whitesmoke;
+    color: white;
     font-family: 'Roboto', sans-serif;
     /* font-weight:100; */
 }
@@ -37,7 +38,7 @@ body{
 
 /* ========== Page 4 ================== */
 .page4{
-    background-color: var(--bgColor);
+    /* background-color: var(--bgColor); */
 }
 
 .meetTeam{
@@ -100,14 +101,101 @@ body{
 .page5{
     background-color: lightpink;
 }
+/* ============ page 6 ============= */
 .page6{
-    background-color: cornflowerblue;
+    display: flex;
+    padding: 100px;
+    gap: 100px;
+    /* background-color: aquamarine; */
+    min-height: 70vh;
+    
+    
+}
+.contact_information{
+    width: 500px;
+}
+.contact_information p{
+    font-family: 'Darker Grotesque', sans-serif;
+
+}
+.contact_form{
+    width: 500px;
+}
+.contact_via{
+    display: flex;
+    gap:20px;
+    align-items: center;
+    /* justify-content: center; */
+}
+.contact_information img{
+    /* size: 30px; */
+    width: 30px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: rgb(255, 174, 0);
+   
+}
+.contact_form{
+    display: flex;
+    flex-direction: column;
+    
+}
+.contact_form form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.entry{
+    height: 38px;
+    width: 180px;
+    background-color: rgba(48, 48, 48, 0.674);
+    border:none;
+    color: whitesmoke;
+}
+.entry:focus{
+    /* border: 1px yellow solid; */
+    outline: 1.5px rgb(255, 200, 0) solid;
+}
+.entry1{
+    width: 367px;
+}
+.entry4{
+    width: 367px;
+}
+form textarea{
+    width: 369px;
+    height: 100px;
+    background-color:  rgba(48, 48, 48, 0.674);
+    color: whitesmoke;
+    border: none;
+    
+
+}
+form textarea:focus{
+    outline: 1.5px rgb(255, 200, 0) solid;
+}
+form textarea::placeholder{
+    color: white;
+}
+.contact_form button{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    background: var(--hoverColor);
+    border: none;
+}
+input::placeholder{
+    color: white;
+    padding-left: 5px;
 }
 
+
+/* ============= footer ============ */
 footer{
     height: 100vh;
     /* background-color: blueviolet; */
-    background-color: var(--bgColor);
+    /* background-color: var(--bgColor); */
     display: flex;
     flex-direction: column;
     /* gap: 200px; */
@@ -129,11 +217,12 @@ footer{
 .contact_info h4{
     font-weight: 200;
     color: rgb(255, 200, 0);
-    font-family: 'Bad Script', cursive;;
+    font-family: 'Bad Script', cursive;
 
 
 }
 .footer_item{
+    /* margin-top: 30px; */
     display: flex;
     gap: 20px;
     
@@ -141,9 +230,9 @@ footer{
     
 }
 .outer{
-    background-image: url('assets/serhat-beyazkaya-ayWgRkCk2sQ-unsplash.jpg'); /* Replace 'your-image-path.jpg' with the actual path to your image */
-    background-size: cover; /* This property ensures the image covers the entire background */
-    background-position: center center; /* Center the background image */
+    background-image: url('assets/serhat-beyazkaya-ayWgRkCk2sQ-unsplash.jpg'); 
+    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat; 
     height: 800px;
 }
@@ -155,7 +244,7 @@ footer{
     width: 300px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: start;
 }
 .links{
@@ -208,6 +297,7 @@ footer{
     justify-content: center;
     align-items: center;
     gap: 5px;
+    border: none;
 }
 .contact_box:hover{
     background: var(--hoverColor);
@@ -237,4 +327,42 @@ footer{
     /* letter-spacing: 0.5px; */
     font-family: 'Darker Grotesque', sans-serif;
     
+}
+.subscribe_form{
+    display: flex;
+    
+}
+.input{
+    height: 35px;
+    border: 1px rgb(255, 166, 0) solid;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border-radius: 20px;
+    width: 260px;
+}
+.input_button{
+    width: 40px;
+    height: 35px;
+    border: none;
+    background-color: whitesmoke;
+    color: white;
+    border-radius: 50%;
+    margin-left: -42px;
+    margin-top: 2px;
+    
+}
+.input_button img{
+    /* padding: 2px; */
+    width: 18px;
+    height: 20px;
+    
+}
+.column4 p{
+    font-family: 'Darker Grotesque', sans-serif;
+
+}
+.column4{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
