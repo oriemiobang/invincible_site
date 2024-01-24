@@ -392,11 +392,26 @@ header ul .contact{
     width: 80%;
     align-items: center; 
     display: inline-block; 
-    padding: 15px;
-     
+    padding: 15px;   
+}
+.mainLabel img{
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 6px;
+    margin: -35px 0 0 180px;
+    display: none;
+    z-index: 1;
+    position: absolute;
+    top: 100;
 }
 .mainLabel:hover{
     background: var(--hoverColor);   
+
+}
+.mainLabel:hover .arrow{
+    display: inline-block;
 }
 .label{
     font-weight:500;
