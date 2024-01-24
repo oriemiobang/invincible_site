@@ -1,10 +1,9 @@
 :root {
-<<<<<<< HEAD
+
     --bgColor: #000000dd;
     --bgColorDark:  #000000ee;
-=======
+
     --bgColor: #000000e9;
->>>>>>> d9b82e2ad871e1c46ddc1789af8c93faef8e494f
     --hoverColor: linear-gradient(to right, rgb(245, 217, 5), rgb(255, 127, 80));
     --secondary-color: #ca8a04;
 }
@@ -205,7 +204,8 @@ header ul .contact{
 
 /* ========== Page 2================== */
 .page2{
-    background-color: var(--bgColor);
+    
+    /* background-color: var(--bgColor); since the background color is already set in the body*/ 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -328,8 +328,91 @@ header ul .contact{
 
 /* ======== Page 5 ============ */
 .page5{
-    background-color: lightpink;
+    /* background-color: lightpink; */
+    display: flex;
 }
+
+
+.technical_title{
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    font-weight: bolder;
+}
+.outer_section{
+    /* background-color: blue; */
+    width: 50%;
+    background-color: rgba(43, 43, 43, 0.358);
+    border-radius: 10px;
+    padding: 1%;
+}
+.outer_section1{
+    /* background-color: yellow; */
+}
+.outer_section2{
+    /* background-color: yellow; */
+    padding: 1% 1% 1% 10%;
+}
+
+.per_progress{
+    margin-top: -20px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+    /* flex-direction: column; */
+    /* background-color: red; */
+}
+.progressBar{
+    width: 80%;
+    height: 6px;
+    background-color: rgba(52, 51, 51, 0.578);
+    border-radius: 5px;
+}
+
+.outer_section2 li{
+    display: inline-block;
+    margin: 0 auto;
+    float: 0;
+    width: 48%;
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+.progress_circle{
+    margin-bottom: 10px;
+    
+
+}
+
+
+
+.percentam{
+    width: 80%;
+    width: 60%;
+    height: 6px;
+    background: var(--hoverColor);
+    border-radius: 5px;
+    -webkit-transition: 3s all;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-name: animationProgress;
+}
+@keyframes  animationProgress {
+    from{
+        width: 0;
+    }
+}
+.percentam1{ width: 95%;}
+.percentam2{width: 90%;}
+.percentam3{width: 80%;}
+.percentam4{width: 90%;}
+.percentam5{width: 95%;}
+.percentam6{width: 85%;}
+
+
+
+
 /* ============ page 6 ============= */
 .page6{
     display: flex;
