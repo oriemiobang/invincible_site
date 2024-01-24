@@ -1,6 +1,8 @@
 :root {
     --bgColor: #000000dd;
+    --bgColorDark:  #000000ee;
     --hoverColor: linear-gradient(to right, rgb(245, 217, 5), rgb(255, 127, 80));
+    --secondary-color: #ca8a04;
 }
 
 html{
@@ -20,19 +22,242 @@ body{
     min-height: 100vh;
 }
 
+.headerLink{
+    position: fixed;
+    top: 0;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+    background-color: rgb(16, 16, 16);
+    padding: 0 15% 0 10%;
+}
+
+.header ul{
+    margin: 0 15%;
+}
+.header li{
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.header li a{
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    padding: 0.5rem 0;
+    border: 2px solid transparent;
+    transition: .5s;
+}
+
+.header li a:hover{
+    border-top-color: var(--secondary-color);
+    border-bottom-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+header ul {
+    display: flex;
+}
+
+header ul .contact{
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+  }
+  
+  header span{
+    color: rgb(255, 200, 0);
+  }
+
+  .headerLink h5 span{
+    font-size: 12px;
+    color: rgb(255, 200, 0);
+    font-family: 'Bad Script', cursive;
+}
 /* ========== Page 1 ================== */
+
 .page1{
-    background-color:darkblue;
+    background: linear-gradient(rgb(0, 0, 0), rgba(37, 37, 37, 0.091)), url('assets/b4.jpg');
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+}
+.secondpage{
+    text-align: left;
+    padding: 0 15%;
+}
+.secondpage h1{
+    font-size: 120px;
+    font-weight: bolder;
+    color: rgb(245, 245, 245);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.secondpage span{
+    color: rgba(11, 11, 11, 0.251);
+    -webkit-text-stroke: 0.1px rgba(238, 236, 236, 0.815);
+}
+
+.secondpage p{
+    font-size: 12px;
+    font-family: monospace;
+}
+
+.secondpage button{
+    font-size: 17px;
+    color: white;
+    background: var(--hoverColor);
+    padding: 15px 30px;
+    margin-top: 20px;
+    border-radius: 30px;
+    border: none;
+}
+
+.secondpage button:hover{
+    background: var(--secondary-color);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.backward-step{
+    position: fixed;
+    top: 50%;
+    left: 0%;
+    padding: 10px 13px;
+    margin-left: 10px;
+    border: 1px solid rgb(255, 200, 0);
+    border-radius: 50%;
+}
+
+.backward-step:hover{
+    background: var(--hoverColor);
+    transition: .5s;
+}
+
+.forward-step{
+    position: fixed;
+    top: 50%;
+    right: 0%;
+    padding: 10px 13px;
+    margin-right: 10px;
+    border: 1px solid rgb(255, 200, 0);
+    border-radius: 50%;
+}
+.forward-step:hover{
+    background: var(--hoverColor);
+    transition: .5s;
+}
+
+.firstpage {
+    text-align: center;
+    display: none;
+}
+
+.firstpage h1{
+    font-size: 120px;
+    font-weight: bolder;
+    color: rgb(245, 245, 245);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 10px;
+}
+.firstpage span{
+    
+    color: rgba(11, 11, 11, 0.251);
+    -webkit-text-stroke: 0.1px rgba(238, 236, 236, 0.815);
+}
+
+.firstpage p{
+    font-size: 12px;
+    font-family: monospace;
+}
+
+.firstpage button{
+    font-size: 17px;
+    color: white;
+    background: var(--hoverColor);
+    padding: 15px 30px;
+    margin-top: 20px;
+    border-radius: 30px;
+    border: none;
+}
+
+.firstpage button:hover{
+    background: var(--secondary-color);
+    transition: .5s;
+    cursor: pointer;
 }
 
 /* ========== Page 2================== */
 .page2{
-    background-color: bisque;
+    background-color: var(--bgColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service {
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+}
+.serve{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    grid-gap: 20px;
+}
+ .serve .cont{
+    background-color: rgba(68, 67, 67, 0.288);
+    padding: 3rem 1rem 4rem;
+    height: 50%;
+ }
+
+ .cont:hover{
+    background: var(--hoverColor);
+    transition: .5s;
+ }
+
+.fa-regular, .fa-solid{
+    color: rgb(255, 200, 0);
+    font-size: 2rem;
+}
+
+.page2 h4{
+    font-weight: 200;
+    color: rgb(255, 200, 0);
+    font-family: 'Bad Script', cursive;
+    margin-bottom: 0;
+}
+
+.page2 h3{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.service h1{
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-top: 0;
+    border-bottom: 2px rgb(255, 200, 0) solid;
+    font-size: 40px;
+    color: whitesmoke;
 }
 
 /* ========== Page 3 ================== */
 .page3{
-    background-color: aliceblue;
+    background-color: rgb(33, 31, 31);
 }
 
 /* ========== Page 4 ================== */
@@ -129,7 +354,7 @@ footer{
 .contact_info h4{
     font-weight: 200;
     color: rgb(255, 200, 0);
-    font-family: 'Bad Script', cursive;;
+    font-family: 'Bad Script', cursive;
 
 
 }
