@@ -894,4 +894,201 @@ footer{
     background-color: #ffffff; /* Set to your desired background color */
     color: #333333; /* Set to your desired text color */
 }
+@media screen and (min-width: 601px) {
+    .query {
+      display: none;
+    }
+    .icon {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .new{
+        display:none;
+    }
+    
+    html {
+      width: 100%;
+    }
+    body {
+      width: 100%;
+    }
+    a.icon {
+      float: left;
+      display: block;
+      margin-right: 200px;
+    }
+    .outer_section2 {
+      padding-right: 200px;
+    }
+    .page5 {
+      display: flex;
+      flex-direction: column;
+      border-bottom: 1px rgba(245, 245, 245, 0.13) solid;
+      padding: 5% 0 0 5%;
+      padding-bottom: 15px;
+      color: inherit;
+      border-top: 1px rgba(245, 245, 245, 0.13) solid;
+    }
+   
+  
+  
+    .secondpage h1 {
+      font-size: 30px; /* Adjust the font size for smaller screens */
+      margin-top: 10px; /* Adjust the top margin for smaller screens */
+      margin-bottom: 10px;
+    }
+  
+    .page3 {
+      background-color: rgb(33, 31, 31);
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .serve {
+      
+      /* Change to a single column layout for mobile */
+      width: 100%;
+      grid-template-columns: repeat(1, 1fr); /* Full width on mobile */
+    }
+  
+    .serve .cont {
+      height: auto; /* Adjust height to auto for mobile */
+      margin-bottom: 20px; /* Add some spacing between items */
+    }
+  
+    .query a {
+      font-size: 16px; /* Adjust the size according to your preference */
+      text-decoration: none;
+      color:antiquewhite;
+    }
+    .query-visible {
+      display: block !important; /* Use !important to override inline styles added by jQuery */
+    }
+    
+    .query {
+      display: flex;
+      flex-direction: column; /* Stack items vertically in mobile view */
+      position: fixed;
+      top: 60px; /* Adjust the top position as needed */
+      background-color:rgba(0, 0, 0, 0.2);
+      width: 100%;
+      height: 100%;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    
+    .footer_item {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    /* ===============page 4 ============ */
+    
+    .meetTeam {
+      padding: 3.5rem 50px 3.4rem 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+    .page4 figcaption {
+      margin-left: 100px;
+    }
+  
+    .img_container {
+      /* height: 100px; */
+    }
+    .images {
+      height: 250px;
+      display: flex;
+    }
+  
+    /* ============ page 5 ============== */
+    .outer_section1, .outer_section2{
+      /* background-color: red; */
+      width: 100%;
+    }
+    .outer_section2{
+      margin: 0;
+      padding: 0;
+    }
+  
+    /* =========page 6 =========== */
+  
+    .page6 {
+      /* align-items: center; */
+      display: flex;
+      flex-direction: column;
+      /* padding: 100px; */
+      margin: 0;
+      padding: 70px 0 30px 20px;
+      gap: 20px;
+      /* background-color: aquamarine; */
+      /* min-height: 70vh; */
+    }
+  
+    .contact_form {
+      /* width: 100px; */
+    }
+    .entry,
+    .textarea {
+      /* height: 50px; */
+      width: 360px;
+    }
+    .entry{
+      height: 50px;
+    }
+    .entry1_and_two {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    form textarea::placeholder {
+      font-size: 15px;
+    }
+    input::placeholder {
+      font-size: 15px;
+    }
+    .contact_form h2 {
+      font-size: 20px;
+      display: flex;
+      padding-bottom: 7px;
+      /* margin-left: 25%; */
+      border-bottom: 1px yellow solid;
+      /* background-color: red; */
+      width: 115px;
+      /* justify-content: center; */
+      
+    }
+    form .submit_button{
+      height: 30px;
+      margin-top: 15px;
+    }
+    .contact_information {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+   
+  
+    .footer_item {
+      /* min-height: 250vh; */
+    }
+    .header, .headerLink{
+      width: 400px;
+      /* margin: 0; */
+      /* padding: 0; */
+      /* background-color: red; */
+    }
+  }
+  
+
+
+
 
