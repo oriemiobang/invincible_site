@@ -38,13 +38,13 @@
     <header class="header">
         <nav>
             <div class="headerLink">
-                <h3>The <span>Invincible</span></h3>
+                <h3>Telbe<span>X</span></h3>
                 <ul>
             
                     <li class="contact">
                         <i class="fa-solid fa-phone"></i>
                         <div class="phone">
-                            <h5><span>Call Us Today</span><br> +251 925 0250</h5>
+                            <h5><span>Call Us Today</span><br><a href="tel:+251 925 0250">+251 925 0250</a> </h5>
                         </div>
                     </li>
                 </ul>
@@ -54,7 +54,7 @@
 
    <br><br> <br> <br> <br><div class="googleForm"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdOEv_AYqyrBmouJKjz6ueGGBAZbkWPkXeaITRAMSler_lkNw/viewform?embedded=true" 
     width="640" height="1900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
-
+    
     <footer id="footer">
         <section class="bottom_sections outer">
             <section class="contact_info">
@@ -63,12 +63,14 @@
                 <div class="contact_item">
                     <button class="contact_box">
                         <img src="assets/call.png" alt="call us">
-                        +251 925 0250
+                        <a href="tel:+251 925 0250" style="color: black;">+251 925 0250</a> 
+
+
                     </button>
-                    <button class="contact_box two">
+                    <!-- <button class="contact_box two">
                         <img src="assets/email.png" alt="email us">
                         Make an enquiry
-                    </button>
+                    </button> -->
                 </div>
     
             </section>
@@ -83,7 +85,7 @@
                     <a class="icon_images icons3" href="#"><img src="assets/youtube_icon (2).png" alt="youtube"></a>
                 </figure>
             </div>
-            <div class="columns column2">
+            <!-- <div class="columns column2">
                 <ul class="menu">
                     <h3>Quick Links</h3>
                     <li><a href="#page1" class="links">Home</a></li>
@@ -92,22 +94,24 @@
                     <li><a href="#page4" class="links">About</a></li>
                     <li><a href="#page5" class="links">Skills</a></li>
                     <li><a href="#page6" class="links">Contact</a></li>   
-                </ul>
-            </div>
+                </ul> 
+            </div> -->
            
             <div class="columns column3">
                 <h3>Contact Info</h3>
                 <p>Haramaya University</p>
                 <p>Harar, Ethiopia</p>
-                <h3 class="phone_number">+251 925 0250</h3>
+                <a class= "phone_number" href="tel:+251 925 0250">+251 925 0250</a> 
+
                 <p class="email_address">invincible@gmail.com</p>
             </div>
             <div class="columns column4">
                 <h3>Subscribe</h3>
                 <p>Subscribe to our newsletter. Stay informed about technology news and events with our newsletter.</p>
-                <form class="subscribe_form">
-                    <input class="input" type="email" placeholder="Enter your email">
-                    <button class="input_button" class="subscribe_button"><img src="assets/send.png" alt="send your email"></button>
+                <form id="emailForm" class="subscribe_form" onsubmit="sendEmail2(event)">
+
+                    <input class="input" type="email" id="email2" placeholder="Enter your email">
+                    <button type="submit" class="input_button" class="subscribe_button"><img src="assets/send.png" alt="send your email"></button>
                 </form>
 
             </div>

@@ -1,5 +1,7 @@
 const header = document.querySelector('.header');
 let lastScrollTop = 0;
+const templateId = 'template_trq93t4';
+const serviceId = 'service_zx29ihn';
 
 window.addEventListener('scroll', () => {
   const currentScrollTop = window.scrollY;
@@ -112,8 +114,7 @@ function sendEmail(event){
   };
 
 
-  const templateId = 'template_trq93t4';
-  const serviceId = 'service_zx29ihn';
+
 
 
   emailjs.send(serviceId, templateId, paramsObj)
@@ -134,13 +135,51 @@ function sendEmail(event){
       console.log(error)
       alert("Couldn't send email check your Network connection ")
     })
-   
 
-
-  
 
   
 
   
 
 }
+
+
+
+   
+function sendEmail2(event){
+  event.preventDefault();
+console.log("it's working")
+
+let email = document.getElementById('email2').value;
+
+
+  const paramsObj = {
+    username: "",
+    email:email,
+    message: "a subscription email " + email,
+    subject: "",  
+    phone: ""
+  };
+  console.log(email);
+
+  emailjs.send(serviceId, templateId, paramsObj)
+    .then((response)=>{ 
+
+    document.getElementById('email2').value = "";
+
+  
+      alert("Email sent")
+      console.log(response)
+    
+
+
+    })
+    .catch((error)=>{
+      console.log(error)
+      alert("Couldn't send email check your Network connection ")
+    })
+
+  
+}
+
+  
