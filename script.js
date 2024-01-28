@@ -115,6 +115,10 @@ $(document).ready(function() {
           return html === '☰' ? '✖' : '☰';
       });
   });
+  $(".links1").click(function() {
+    $(".query").slideUp();
+    $(".icon").html('☰');
+  });
 });
 
 // $(document).ready(function() {

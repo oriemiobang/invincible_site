@@ -904,10 +904,11 @@ footer{
   }
   
   @media screen and (max-width: 768px) {
+    
 
     
     
-    .new{
+    #new1{
         display:none;
     }
     
@@ -927,7 +928,7 @@ footer{
         display: block !important; /* Use !important to override inline styles added by jQuery */
       }
       
-      .query {
+       .query {
         display: flex;
         flex-direction: column; /* Stack items vertically in mobile view */
         position: fixed;
@@ -937,7 +938,7 @@ footer{
         height: 100%;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
-      }
+      } 
     a.icon {
       float: left;
       display: block;
