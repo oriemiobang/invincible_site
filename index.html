@@ -38,18 +38,21 @@
             <div class="headerLink">
                 <h3>The <span>Invincible</span></h3>
                 <ul>
-                    <li><a href="#page1" class="links">Home</a></li>
-                    <li><a href="#page2" class="links">Services</a></li>
-                    <li><a href="#page3" class="links">Works</a></li>
-                    <li><a href="#page4" class="links">About</a></li>
-                    <li><a href="#page5" class="links">Skills</a></li>
-                    <li><a href="#page6" class="links">Contact</a></li>
-                    <li class="contact">
+                    <li> <a href="javascript:void(0);" class="icon"  id="toggleButton">☰ </a></li>
+                    
+                    <li><a href="#page1" class="links"  id="new1">Home</a></li>
+                    <li><a href="#page2" class="links" id="new1">Services</a></li>
+                    <li><a href="#page3" class="links" id="new1">Works</a></li>
+                    <li><a href="#page4" class="links" id="new1">About</a></li>
+                    <li><a href="#page5" class="links" id="new1">Skills</a></li>
+                    <li><a href="#page6" class="links" id="new1">Contact</a></li>
+                    <li class="contact"  class="new">
                         <i class="fa-solid fa-phone"></i>
                         <div class="phone">
                             <h5><span>Call Us Today</span><br> +251 925 0250</h5>
                         </div>
                     </li>
+                    
                 </ul>
             </div>
         </nav>
@@ -125,7 +128,7 @@
                     <div class="pic sixth">
                         <img src="assets/b2.jpg" alt="image-6">
                         <p>project-6</p>
-                    </div>
+                    </=div>
                 </div>
             </div>
         </section>
@@ -333,7 +336,7 @@
                 <h2>Get in touch!</h2>
                 <form id="emailForm" onsubmit="sendEmail(event)">
                     <input class="entry entry1" type="text" id="username" name="username" placeholder="Name *" required>
-                    <div>
+                    <div class="entry_1and2">
                         <input class="entry entry2" type="email" id="email" name="email" placeholder="Email *" required>
                         <input class="entry entry3" type="text"  id="phone" name="phone" placeholder="Phone *" >
                         
@@ -379,24 +382,26 @@
                     <a class="icon_images icons3" href="#"><img src="assets/youtube_icon (2).png" alt="youtube"></a>
                 </figure>
             </div>
-            <div class="columns column2">
-                <ul class="menu">
-                    <h3>Quick Links</h3>
-                    <li><a href="#page1" class="links">Home</a></li>
-                    <li><a href="#page2" class="links">Services</a></li>
-                    <li><a href="#page3" class="links">Works</a></li>
-                    <li><a href="#page4" class="links">About</a></li>
-                    <li><a href="#page5" class="links">Skills</a></li>
-                    <li><a href="#page6" class="links">Contact</a></li>   
-                </ul>
-            </div>
-           
-            <div class="columns column3">
-                <h3>Contact Info</h3>
-                <p>Haramaya University</p>
-                <p>Harar, Ethiopia</p>
-                <h3 class="phone_number">+251 925 0250</h3>
-                <p class="email_address">invincible@gmail.com</p>
+            <div class="column2_and_column3">
+                <div class="columns column2">
+                    <ul class="menu">
+                        <h3>Quick Links</h3>
+                        <li><a href="#page1" class="links">Home</a></li>
+                        <li><a href="#page2" class="links">Services</a></li>
+                        <li><a href="#page3" class="links">Works</a></li>
+                        <li><a href="#page4" class="links">About</a></li>
+                        <li><a href="#page5" class="links">Skills</a></li>
+                        <li><a href="#page6" class="links">Contact</a></li>   
+                    </ul>
+                </div>
+               
+                <div class="columns column3">
+                    <h3>Contact Info</h3>
+                    <p>Haramaya University</p>
+                    <p>Harar, Ethiopia</p>
+                    <h3 class="phone_number">+251 925 0250</h3>
+                    <p class="email_address">invincible@gmail.com</p>
+                </div>
             </div>
             <div class="columns column4">
                 <h3>Subscribe</h3>
@@ -409,9 +414,22 @@
             </div>
 
         </section>
+        <div class="query">
+            
+                    
+                <a href="#page1" class="links1"  >Home</a>
+                <a href="#page2" class="links1" >Services</a>
+                <a href="#page3" class="links1"  >Works</a>
+                <a href="#page4" class="links1"  >About</a>
+                <a href="#page5" class="links1"  >Skills</a>
+                <a href="#page6" class="links1" >Contact</a>
+                
+            
+            </div>
 
 
     </footer>
+    <script src="jquery-3.7.1.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

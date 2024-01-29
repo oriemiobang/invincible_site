@@ -93,6 +93,46 @@ setInterval(() => {
   }
 }, 30);
 
+// function toggleNavbar() {
+//   var navbar = document.getElementById("navbar");
+//   if (navbar.className === "navbar") {
+//       navbar.className += " responsive";
+//   } else {
+//       navbar.className = "navbar";
+//   }}
+//   $(document).ready(function() {
+//     $(".icon").click(function() {
+//       $(".query").slideToggle();
+//       $(this).html(function(_, html) {
+//         return html === '&#9776;' ? '&#10006;' : '&#9776;';
+//     });
+//     });
+// });
+$(document).ready(function() {
+  $(".icon").click(function() {
+      $(".query").slideToggle();
+      $(this).html(function(_, html) {
+          return html === '☰' ? '✖' : '☰';
+      });
+  });
+  $(".links1").click(function() {
+    $(".query").slideUp();
+    $(".icon").html('☰');
+  });
+});
+
+// $(document).ready(function() {
+//   $(".icon").click(function() {
+//     $(".query").slideToggle();
+  
+//       });
+//   });
+//   });
+// });
+
+
+
+
 
 
 
