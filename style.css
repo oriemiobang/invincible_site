@@ -28,7 +28,9 @@ body{
     border-bottom: 1px rgba(245, 245, 245, 0.13) solid;
     border-top: 1px rgba(245, 245, 245, 0.13) solid;
 }
-
+.header{
+    width: 100%;
+}
 .headerLink{
     position: fixed;
     top: 0;
@@ -78,7 +80,9 @@ header ul .contact{
     margin-top: 0;
     padding-top: 0;
 }
-
+.phone h5{
+    text-wrap: nowrap;
+}
 .header .bars{
     visibility: hidden;
 }
@@ -220,7 +224,7 @@ header ul .contact{
 
 /* ========== Page 3 ================== */
 .page3{
-    background-color: rgb(33, 31, 31);
+    /* background-color: rgb(33, 31, 31); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -305,242 +309,16 @@ header ul .contact{
     height: 100%;
 }
 
-@media screen and (max-width: 768px){
-   
-    .fa-bars{
-        visibility: visible;
-        position: fixed;
-        top: 0;
-        right: 0;
-        margin: 25px 30px;
-        cursor: pointer;
-        color: whitesmoke;
-        font-size: 20px;
 
-    }
-    .fa-xmark{
-        position: fixed;
-        top: 0;
-        right: 0;
-        margin: 25px 30px;
-        cursor: pointer;
-        color: whitesmoke;
-        font-size: 20px;
-    }
-    .headerLink .bars{
-        visibility: visible;
-        position: absolute;
-        top: 0;
-        right: 0;
-        margin: 25px 30px;
-        transform: scale(2.5);
-        z-index: 3;
-        cursor: pointer;
-        opacity: 0;
-    }
-    .headerLink{
-        display: block;
-        padding: 0;
-    }
-    .headerLink h2{
-        margin-left: 20px;
-    }
-    .headerLink ul{
-        height: 0;
-        display: none;
-        margin: 0;
-        padding: 0;
-        background: #333333d0;
-        transition: .5s;
-    }
-    .headerLink .contact{
-        display: none;
-    }
-
-    nav .bars:checked ~ ul{
-        display: block;
-        height: 100%;
-    }
-    nav .bars:checked ~ .fa-bars{
-        visibility: hidden;
-    }
-    nav .bars:checked ~ .fa-xmark{
-        visibility: visible;
-    }
-    .headerLink ul li{
-        display: block;
-        margin: 0;
-     }
-
-     .headerLink ul li:hover{
-        background: #212121d3;
-     }
-     .header li a{
-        border: none;
-        margin: 3px 20px;
-        padding: 8px;
-    }
-    .header li a:hover{
-        border: none;
-        color: whitesmoke;
-    }
-    header ul .contact{
-        display: flex;
-        margin: 0 30px;
-    }
-    header ul .contact:hover{
-        background: transparent;
-        border: none;
-        display: flex;
-        align-items: center;
-        margin-top: 0;
-        padding-top: 0;
-    }
-    
-    .secondpage h1{
-        font-size: 45px;
-    }
-    .secondpage p{
-        font-size: 8px;
-    }
-    
-    .secondpage button{
-        font-size: 12px;
-        margin-top: 10px;
-    }
-    
-    .workImage, .serve{
-        grid-template-columns: repeat(1, 1fr);
-        grid-row-gap: 10px;
-        transition: .5s;
-    }
-    .works h1, .service h1, .meetTeamTitle h1{
-        font-size: 25px;
-    }
-
-    .meetTeam {
-        padding: 3.5rem 50px 3.4rem 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-      }
-      .page4 figcaption {
-        margin-left: 100px;
-      }
-    
-      .images {
-        height: 250px;
-        display: flex;
-      }
-
-      .page5 {
-        display: flex;
-        flex-direction: column;
-        border-bottom: 1px rgba(245, 245, 245, 0.13) solid;
-        padding: 5% 0 0 5%;
-        padding-bottom: 15px;
-        color: inherit;
-        border-top: 1px rgba(245, 245, 245, 0.13) solid;
-      }
-      .outer_section1, .outer_section2{
-        /* background-color: red; */
-        width: 100%;
-      }
-      .outer_section2{
-        margin: 0;
-        padding: 0;
-      }
-      .footer_item {
-        display: flex;
-        flex-direction: column;
-      }
-
-      .page6 {
-        display: flex;
-        flex-direction: column;  
-        overflow-x: hidden; 
-      }
-      .textarea {
-        height: 50px;
-        width: 360px;
-      }
-      .entry_1and2{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-    .entry{
-      height: 50px;
-    }
-    .entry1_and_two {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    form textarea::placeholder {
-      font-size: 15px;
-    }
-    input::placeholder {
-      font-size: 15px;
-    }
-    .contact_form h2 {
-      font-size: 20px;
-      display: flex;
-      padding-bottom: 7px;
-      /* margin-left: 25%; */
-      border-bottom: 1px yellow solid;
-      /* background-color: red; */
-      width: 115px;
-      /* justify-content: center; */
-      
-    }
-    form .submit_button{
-      height: 30px;
-      margin-top: 15px;
-    }
-    .contact_information {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .column3 h3, .column3 p{
-        margin-top: -1px;
-    }
-    .menu h3{
-        text-wrap: nowrap;
-        padding: 0;
-        margin: 10px 0 0 -25px;
-        
-    }
-    .contact_info h1{
-        font-size: 50px;
-    }
-   .column2_and_column3{
-    display: flex;
-    gap: 10%;
-    /* flex-direction: column; */
-    /* justify-content: space-between; */
-    /* padding: 0; */
- 
-   }
-   .footer_item {
-    min-height: 82vh;
-    }
-    .contact_information p{
-    width: 70%;
-    }
-    .column4 form{
-        margin-bottom: 50px;
-    }
-}
       
 /* ========== Page 4 ================== */
 .page4{
     /* background-color: var(--bgColor); */
 }
-
+.link_container a{
+    text-decoration: none;
+    color: white;
+}
 .meetTeam{
     padding: 3.5rem 50px 3.4rem 50px;
     display: flex;
@@ -601,7 +379,7 @@ header ul .contact{
     font-weight:500;
 }
 
-.subtitle{
+.subtitles{
     text-wrap: nowrap;
     font-size: 13px;
     color: rgba(245, 245, 245, 0.715);
@@ -759,7 +537,7 @@ svg{
     width: 60%;
     height: 3px;
     background: var(--hoverColor);
-    border-radius: 5px;
+    border-radius: 5px; 
     -webkit-transition: 3s all;
     -webkit-animation-duration: 3s;
     -webkit-animation-name: animationProgress;
@@ -964,7 +742,7 @@ footer{
     align-items: center;
     gap: 20px;
 }
-.contact_box{
+.contact_boxs{
     background: var(--hoverColor);
     color: black;
     padding: 12px;
@@ -978,11 +756,13 @@ footer{
     border: none;
 }
 
-.two{
+.two, .one{
     background: white;
 }
-
-.two:hover{
+.contact_info a{
+    text-decoration: none;
+}
+.two:hover, .one:hover{
     background: var(--hoverColor);
 }
 .contact_box:hover{
@@ -1056,139 +836,249 @@ footer{
 .googleForm{
     align-items: center;
     text-align: center;
-    background-color: #ffffff; /* Set to your desired background color */
-    color: #333333; /* Set to your desired text color */
+    background-color: #ffffff;
+    color: #333333;
 }
-@media screen and (min-width: 769px) {
-    .query {
-      display: none;
-    }
-    .icon {
-      display: none;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    
 
-    
-    
-    #new1{
-        display:none;
-    }
-    
-    html {
-      width: 100%;
-    }
-    body {
-      width: 100%;
-    }
-    /* page1 */
-    .query a {
-        font-size: 16px; /* Adjust the size according to your preference */
-        text-decoration: none;
-        color:antiquewhite;
-      }
-      .query-visible {
-        display: block !important; /* Use !important to override inline styles added by jQuery */
-      }
-      
-       .query {
-        display: flex;
-        flex-direction: column; /* Stack items vertically in mobile view */
-        position: fixed;
-        top: 60px; /* Adjust the top position as needed */
-        background-color:rgba(0, 0, 0, 0.2);
-        width: 100%;
-        height: 100%;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-      } 
-    a.icon {
-      float: left;
-      display: block;
-      margin-right: 200px;
-    }
-    .outer_section2 {
-      padding-right: 200px;
-    }
-    .secondpage h1 {
-        font-size: 30px; /* Adjust the font size for smaller screens */
-        margin-top: 10px; /* Adjust the top margin for smaller screens */
-        margin-bottom: 10px;
-        padding-right: 100px;
-  
-      }
+
+  @media screen and (max-width: 768px){
    
-   /* page 2 */
-   .page2 h3{
-    font-size: 1rem;
-    font-weight: bold;
-    padding-right: 70px;
-}
-  .subtitle{
-    font-size:12px;
-    padding-right:120px;
-    
-  }
-  .page2 h4{
-    font-weight: 200;
-    color: rgb(255, 200, 0);
-    font-family: 'Bad Script', cursive;
-    padding-right:200px;
-}
-  
-    .page2 h1 {
-      font-size: 30px; /* Adjust the font size for smaller screens */
-      margin-top: 10px; /* Adjust the top margin for smaller screens */
-      margin-bottom: 10px;
-      padding-right: 100px;
+    .fa-bars{
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin: 25px 30px;
+        cursor: pointer;
+        color: whitesmoke;
+        font-size: 20px;
 
     }
-  /* page 3 ....................................*/
-    .page3 {
-      background-color: rgb(33, 31, 31);
+    header{
+        width: 100%;
+    }
+    .fa-xmark{
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin: 25px 30px;
+        cursor: pointer;
+        color: whitesmoke;
+        font-size: 20px;
+    }
+    .headerLink .bars{
+        visibility: visible;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 25px 30px;
+        transform: scale(2.5);
+        z-index: 3;
+        cursor: pointer;
+        opacity: 0;
+    }
+    .headerLink{
+        width: 100%;
+        display: block;
+        padding: 0;
+    }
+    .headerLink h2{
+        margin-left: 20px;
+    }
+    .headerLink ul{
+        height: 0;
+        display: none;
+        margin: 0;
+        padding: 0;
+        background: #333333d0;
+        transition: .5s;
+    }
+    .headerLink .contact{
+        display: none;
+    }
+
+    nav .bars:checked ~ ul{
+        display: block;
+        height: 100%;
+    }
+    nav .bars:checked ~ .fa-bars{
+        visibility: hidden;
+    }
+    nav .bars:checked ~ .fa-xmark{
+        visibility: visible;
+    }
+    .headerLink ul li{
+        display: block;
+        margin: 0;
+     }
+
+     .headerLink ul li:hover{
+        background: #212121d3;
+     }
+     .header li a{
+        border: none;
+        margin: 3px 20px;
+        padding: 8px;
+    }
+    .header li a:hover{
+        border: none;
+        color: whitesmoke;
+    }
+    header ul .contact{
+        display: flex;
+        margin: 0 30px;
+    }
+    header ul .contact:hover{
+        background: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    
+    .secondpage h1{
+        font-size: 45px;
+    }
+    .secondpage p{
+        font-size: 8px;
+    }
+    
+    .secondpage button{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    
+    .workImage, .serve{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 10px;
+        transition: .5s;
+    }
+    .works h1, .service h1, .meetTeamTitle h1{
+        font-size: 25px;
+    }
+    .meetTeam {
+        padding: 3.5rem 50px 3.4rem 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+      .page4 figcaption {
+        margin-left: 100px;
+      }
+    
+      .images {
+        height: 250px;
+        display: flex;
+      }
+
+      .page5 {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px rgba(245, 245, 245, 0.13) solid;
+        padding: 5% 0 0 5%;
+        padding-bottom: 15px;
+        color: inherit;
+        border-top: 1px rgba(245, 245, 245, 0.13) solid;
+      }
+      .outer_section1, .outer_section2{
+        /* background-color: red; */
+        width: 100%;
+      }
+      .outer_section2{
+        margin: 0;
+        padding: 0;
+      }
+      .footer_item {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .page6 {
+        display: flex;
+        flex-direction: column;  
+        overflow-x: hidden; 
+      }
+      .textarea {
+        height: 50px;
+        width: 360px;
+      }
+      .entry_1and2{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .entry{
+      height: 50px;
+    }
+    .entry1_and_two {
       display: flex;
       flex-direction: column;
-      padding-bottom: 20px;
-      justify-content: center;
-      align-items: center;
-    } .workImage {
-        width: 90%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 20px;
-        padding-right: 100px;
-        
+      gap: 10px;
     }
-    .workImage img{
-        margin-right:200px;
-        width:80%;
+    form textarea::placeholder {
+      font-size: 15px;
     }
-  
-    .serve {
+    input::placeholder {
+      font-size: 15px;
+    }
+    .contact_form h2 {
+      font-size: 20px;
+      display: flex;
+      padding-bottom: 7px;
+      /* margin-left: 25%; */
+      border-bottom: 1px yellow solid;
+      /* background-color: red; */
+      width: 115px;
+      /* justify-content: center; */
       
-      /* Change to a single column layout for mobile */
-      width: 100%;
-      text-align: center;
-      grid-template-columns: repeat(1, 1fr);
-     /* Full width on mobile */
     }
-  
-    .serve .cont {
-      height: auto; /* Adjust height to auto for mobile */
-      margin-bottom: 20px; /* Add some spacing between items */
+    form .submit_button{
+      height: 30px;
+      margin-top: 15px;
     }
-    .page3 h1{
-        padding-right: 150px;
+    .contact_information {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .column3 h3, .column3 p{
+        margin-top: -1px;
+    }
+    .menu h3{
+        text-wrap: nowrap;
+        padding: 0;
+        margin: 10px 0 0 -25px;
         
     }
-    .page3 h4{
-        padding-right:100px;
+    .contact_info h1{
+        font-size: 50px;
     }
-  /* page...........................  1 */
-    
-    
+   .column2_and_column3{
+    display: flex;
+    gap: 10%;
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    /* padding: 0; */
+ 
+   }
+   .footer_item {
+    min-height: 82vh;
+    }
+    .contact_information p{
+    width: 70%;
+    }
+    .column4 form{
+        margin-bottom: 50px;
+    }
+
+
+     
+  .outer_section2 {
+    padding-right: 200px;
+  }
     .footer_item {
       display: flex;
       flex-direction: column;
@@ -1351,9 +1241,20 @@ footer{
 .contact_information p{
     width: 70%;
 }
-  }
-  
-
-
-
-
+.mainLabel:hover .arrow{
+    display: inline-block;
+    margin-left: 155px;
+}
+.meetTeamTitle{
+    width: 37%
+    ;
+}
+.headerLink{
+    width: 100%;
+}
+/* .arrow{
+    position: absolute;
+    left: 0;
+    margin-left: 900px;
+} */
+}
