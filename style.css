@@ -1252,6 +1252,10 @@ footer{
 .headerLink{
     width: 100%;
 }
+
+.googleForm{
+    width: 100%;
+}
 /* .arrow{
     position: absolute;
     left: 0;
